@@ -1,0 +1,22 @@
+import Link from 'next/link'
+import { SiBurgerking } from 'react-icons/si'
+
+const Header = () => {
+
+   return (
+      <div>
+         <header>
+            <div>
+               <SiBurgerking />
+            </div>
+            <nav>
+               <Link href='/'><a>Домой</a></Link>
+               <Link href='/about'><a>О нас</a></Link>
+               <Link href='/reviews'><a>Отзывы</a></Link>
+               <Link href='/burgers'><a>Бургеры</a></Link>
+            </nav>
+         </header>
+      </div>
+   )
+}
+export default Header;
